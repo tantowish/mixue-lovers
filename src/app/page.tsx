@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <div data-aos="fade-up-left" data-aos-duration='800' data-aos-delay='500' className="w-full md:w-2/3">
             <div className="flex flex-wrap flex-col gap-6 mb-8">
-              <h4 className="text-[#054A45] font-bold text-2xl">Hi, I'm Shyra Athaya</h4>
+              <h4 className="text-[#054A45] font-bold text-2xl">Hi, I&apos;m Shyra Athaya</h4>
               <h1 className="font-bold text-3xl md:text-4xl">UI/UX Designer</h1>
               <p className="text-justify">Highly motivated Software Engineering student with a strong foundation in user research and analyzing systems. I have experience in UI/UX designer and project management. Additionally, I possess strong communication, negotiation, teamwork skills, with a flexible mindset to adapt to any working environment, and also has experience in organizations.</p>
             </div>
