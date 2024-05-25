@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from "react";
 import Particles from "react-tsparticles";
-import type { Container, Engine } from "tsparticles-engine";
+import type { Container, Engine, ISourceOptions, OutMode, } from "tsparticles-engine";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
@@ -19,8 +19,7 @@ export const PartcilesComponent = () => {
         await console.log(container);
     }, []);
 
-    const options = useMemo(
-        () => ({
+    const options: ISourceOptions  ={
           background: {
             color: {
               value: "#1e1e1e",
@@ -60,10 +59,10 @@ export const PartcilesComponent = () => {
               width: 1,
             },
             move: {
-              direction: "none",
+              direction: 0,
               enable: true,
               outModes: {
-                default: "bounce",
+                default: "bounce"
               },
               random: true,
               speed: 1,
@@ -86,9 +85,7 @@ export const PartcilesComponent = () => {
             },
           },
           detectRetina: true,
-        }),
-        [],
-      );    
+        }
 
     return (
         <Particles className="-z-50 h-full w-full absolute" id="tsparticles" init={particlesInit} loaded={particlesLoaded} options={options} />
